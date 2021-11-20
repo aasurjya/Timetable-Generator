@@ -15,7 +15,12 @@ public static void main(String[] args) throws IOException {
     Map<String,Course> CO = new HashMap<String,Course>();
     Map<String,Professor> PR = new HashMap<String,Professor>();
 
-    JFrame f=new JFrame();  
+    JFrame f=new JFrame();
+    f.addWindowListener(new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+            System.exit(0);
+        }
+    });
     JFrame s=new JFrame();  
     JPanel home=new JPanel();
     JLabel l1=new JLabel("Welcome to Timetable Generator");
