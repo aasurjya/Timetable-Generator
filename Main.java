@@ -306,18 +306,4 @@ public static void main(String[] args) throws IOException {
     f.setVisible(true);
 	  
 }
-}  
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
+}
